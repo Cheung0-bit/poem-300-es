@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>唐诗三百首</title>
+</head>
+<body>
+    <div id="search">
+        <input type="text" id="keyword">
+        <input type="button" value="搜索" onclick="search()">
+    </div>
+    <div style="display: flex;flex-wrap: wrap;justify-content: space-between">
+        <div th:if="${poems}!=null" th:each="poem:${poems}" style="white-space: pre">
+            <HR width=100%>
+            <span th:utext="${poem.title}"></span>
+            <span th:utext="${poem.author}"></span>
+            <span th:utext="${poem.type}"></span>
+            <div th:utext="${poem.contents}"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function search() {
+            const keyword = document.getElementById("keyword").value;
+            window.location.href = `/search?keyword=${keyword}`
+        }
+    </script>
+</body>
+</html>
