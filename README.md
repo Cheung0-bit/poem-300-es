@@ -80,10 +80,10 @@ if __name__ == '__main__':
 
 通过`/poem/search`接口模糊搜索
 
-![image-20221004142956059](C:\Users\T1725\AppData\Roaming\Typora\typora-user-images\image-20221004142956059.png)
+![image-20221004142956059](https://0-bit.oss-cn-beijing.aliyuncs.com/image-20221004142956059.png)
 
 浏览器访问，可视化搜索
 
-![image-20221004143114409](C:\Users\T1725\AppData\Roaming\Typora\typora-user-images\image-20221004143114409.png)
+![image-20221004143114409](https://0-bit.oss-cn-beijing.aliyuncs.com/image-20221004143114409.png)
 
-![image-20221004143550697](C:\Users\T1725\AppData\Roaming\Typora\typora-user-images\image-20221004143550697.png)
+![image-20221004143550697](https://0-bit.oss-cn-beijing.aliyuncs.com/image-20221004143550697.png)
